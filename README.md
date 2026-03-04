@@ -178,9 +178,9 @@ This project was tested against all 6 [EntraGoat](https://github.com/Semperis/En
 The agent produced findings like:
 
 > **Finding 1: Excessive Global Administrators**
-> **Severity:** CRITICAL
-> **Details:** 16 Global Administrator accounts exist. Only two are baseline user accounts; the rest are either service principals or lab-created user accounts/groups.
-> **Risk:** Increased attack surface for privilege escalation and potential internal/external abuse.
+> **Severity:** CRITICAL  
+> **Details:** 16 Global Administrator accounts exist. Only two are baseline user accounts; the rest are either service principals or lab-created user accounts/groups.  
+> **Risk:** Increased attack surface for privilege escalation and potential internal/external abuse.  
 > **Remediation:** Reduce the number of Global Administrators to two primary human accounts.
 ![Entra ID Security Auditor](docs/screenshot-finding.png)
 ---
