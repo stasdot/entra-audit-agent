@@ -182,7 +182,7 @@ The agent produced findings like:
 > **Details:** 16 Global Administrator accounts exist. Only two are baseline user accounts; the rest are either service principals or lab-created user accounts/groups.
 > **Risk:** Increased attack surface for privilege escalation and potential internal/external abuse.
 > **Remediation:** Reduce the number of Global Administrators to two primary human accounts.
-
+![Entra ID Security Auditor](docs/screenshot-finding.png)
 ---
 
 ## Project Structure
