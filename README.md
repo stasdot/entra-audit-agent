@@ -1,4 +1,4 @@
-# 🛡️ Entra ID Security Auditor
+# Entra ID Security Auditor
 
 An AI-powered security auditor for Microsoft Entra ID. It connects to a live tenant, retrieves real configuration data via Microsoft Graph API, and uses an Azure AI Foundry agent to analyze security misconfigurations, privilege escalation paths, and policy gaps.
 
@@ -18,11 +18,11 @@ An AI-powered security auditor for Microsoft Entra ID. It connects to a live ten
 │  │  (GPT-4o agent)     │  │      │  │  + Graph API perms  │  │
 │  └──────────▲──────────┘  │      │  └──────────▲──────────┘  │
 └─────────────│─────────────┘      └─────────────│─────────────┘
-              │                                   │
+              │                                  │
        Azure OpenAI API                Microsoft Graph API
-              │                                   │
-        ┌─────┴───────────────────────────────────┴─────┐
-        │              Flask Web App                     │
+              │                                  │
+        ┌─────┴──────────────────────────────────┴──────┐
+        │              Flask Web App                    │
         │     (bridges both APIs + serves chat UI)      │
         └───────────────────────────────────────────────┘
 ```
@@ -74,7 +74,7 @@ Azure AI Foundry agents using `agent_reference` don't support runtime `tools=` p
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/yourusername/entra-audit-agent.git
+git clone https://github.com/stasdot/entra-audit-agent.git
 cd entra-audit-agent
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
